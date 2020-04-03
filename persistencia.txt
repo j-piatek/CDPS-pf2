@@ -1,0 +1,18 @@
+1-Destruir el escenario
+sudo vnx -f pc2/pc2.xml --destroy
+
+2-Entrar en la maquina virtual
+sudo vnx --modify-rootfs pc2/filesystems/rootfs_lxc64-cdps --arch=x86_64
+
+3-activar red
+comprobar si ya esta activa, si no ejecutar:
+sudo dhclient eth0
+
+4-instalar los paquetes
+apt-get update
+apt-get upgrade -y
+apt-get install -y npm nodejs mariadb-server haproxy
+
+5 salir con:
+halt -p
+

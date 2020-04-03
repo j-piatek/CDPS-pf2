@@ -1,0 +1,11 @@
+Instruciones para escenario con persistencia:
+
+1-script pf2.py: se baja y monta el escenario una primera vez para poder modificar la imagen.
+
+2-seguimos las instrucciones de persistencia.txt para instalar los paquetes en la imagen
+
+#A partir de aqui tenemos persistencia
+
+3-script conf.py: con ese script configuramos de forma adecuada cada una de las maquinas apoyandonos en los scripts de configuracion(fw, bbdd, app, nas y lb)
+
+4-escenario listo. Para conectase a la aplicacion: en buscador 20.20.2.2 o en el terminal ejecutar- lynx 20.20.2.2
